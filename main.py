@@ -1,4 +1,4 @@
-if __name__ == "__main__":  
+if __name__ == "__main__":  #ESTE MAIN NO FUNCIONA
     main = int(input("Que ejercicio deseas realizar(1y2,3,4 o 5):"))
     if main == 1 or 2:
         from ejercicio1y2.alum import *
