@@ -13,3 +13,14 @@ class Coche(Vehiculo):
         self.cilindrada = cilindrada
     def __str__(self):
         return Vehiculo.__str__(self) + ", {} km/h, {}cc".format(self.velocidad, self.cilindrada)
+
+class Camion(Vehiculo):
+    def __init__(self, color, ruedas, carga):
+        Vehiculo.__init__(color,ruedas)
+        self.carga = carga
+        
+    def __str__(self):
+        return Vehiculo.__str__(self) + ", {} kg".format(self.carga)
+    
+        
+        
