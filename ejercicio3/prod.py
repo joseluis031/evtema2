@@ -12,13 +12,8 @@ class Producto: #estuve estudiando este ejercicio ayer y lo he copiao
                f"PVP\t\t {self.pvp}\n" \
                f"TIPO\t {self.tipo}\n"
                
-alimento = Producto(203685, "Pasta", 55, "hidratos")
-print(alimento)
 
-alimento2 = Producto(103685, "Carne", 55, "proteina")
-print(alimento2)
 
 def cambio_pvp(producto, rebaja):
     producto.pvp = producto.pvp - (producto.pvp/100 * rebaja)
-cambio_pvp(alimento2, 10)
-print(alimento2)
+
