@@ -40,6 +40,20 @@ class Motocicleta(Vehiculo):
         self.cilindrada=cilindrada
     def get_cilindrada(self):
         return self.cilindrada
+    
+    
+class bicicleta(Vehiculo):
+    def __init__(self, color, ruedas, tipo):
+        Vehiculo.__init__(color,ruedas)
+        self.tipo = tipo
+    
+    def __str__(self):
+        return Vehiculo.__str__(self) + + ", {}".format(self.tipo)
+    
+    def set_tipo(self,tipo):
+        self.tipo=tipo
+    def get_tipo(self):
+        return self.tipo
 
     
     
