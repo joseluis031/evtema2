@@ -7,7 +7,13 @@ class Producto:
         print("El producto se ha creado con exito")
 
     def __str__(self):
-        return f"REFERENCIA\t {self.codigo}\n" \
+        return f"CODIGO\t {self.codigo}\n" \
                f"NOMBRE\t\t {self.nombre}\n" \
                f"PVP\t\t {self.pvp}\n" \
-               f"DESCRIPCIÓN\t {self.tipo}\n"
+               f"TIPO\t {self.tipo}\n"
+               
+alimento = Producto(203685, "Pasta", 55, "hidratos")
+print(alimento)
+
+alimento2 = Producto(103685, "Carne", 55, "proteina")
+print(alimento2)
