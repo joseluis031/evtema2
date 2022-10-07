@@ -12,3 +12,10 @@ class Alumno:
             print("el alumno no ha aprobado")
         else:
             pass
+        
+A = Alumno("javi",6)
+print(A)
+A.calif()
+B = Alumno("miguel",4)
+print(B)
+B.calif()
